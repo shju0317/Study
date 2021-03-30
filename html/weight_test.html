@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과체중 테스트</title>
+    <script>
+      var name = prompt("당신의 이름은?", ""); // 이름 입력
+      var height = prompt("당신의 키는?(kg)", 0); // 키 입력
+      var weight = prompt("당신의 몸무게는?(cm)", 0); // 몸무게 입력
+
+      var normalWeight = (height - 100) * 0.9; // 평균 체중
+      document.write("평균체중은 " + normalWeight + "kg 입니다.");
+
+      var result = weight >= normalWeight - 5 && weight <= normalWeight + 5; // 오차 범위 -5 ~ +5
+      result = result ? "적정체중입니다" : "적정체중이 아닙니다";
+      document.write(name + "님은 " + result);
+    </script>
+  </head>
+  <body></body>
+</html>
