@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*
+    조건식
+    false : 0, null, "", undefined
+    true : 이 외
+    */
+      var walkAmount = prompt("하루 걷는 양은 몇 보인가요?", "0");
+
+      if (walkAmount >= 10000) {
+        document.write("gooood", "<br>");
+      }
+
+      var result = confirm("회원 탈퇴하시겠습니까?");
+
+      if (result) {
+        document.write("탈퇴 처리되었습니다.");
+      } else {
+        document.write("탈퇴 취소되었습니다.", "<br>");
+      }
+
+      document.write("The End");
+    </script>
+  </head>
+  <body></body>
+</html>
