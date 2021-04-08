@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer>
+      $(document).ready(function () {
+        $(".btn").hover(
+          function () {
+            $(this).css({ background: "skyblue", transition: "0.7s" });
+          },
+          function () {
+            $(this).css({ background: "darkolivegreen", transition: "0.5s" });
+          }
+        );
+      });
+    </script>
+    <style>
+      .btn {
+        width: 150px;
+        height: 100px;
+        line-height: 100px;
+        background: darkolivegreen;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">HYUN</div>
+    <div class="btn">HYUN</div>
+    <div class="btn">HYUN</div>
+    <div class="btn">HYUN</div>
+    <div class="btn">HYUN</div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".popupBg").css({ display: "block" });
+        });
+        $(".popupBg").click(function () {
+          $(this).css({ display: "none" });
+        });
+      });
+    </script>
+    <style>
+      .btn {
+        width: 150px;
+        height: 100px;
+        line-height: 100px;
+        background: darkolivegreen;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .popupBg {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .popup {
+        position: absolute;
+        left: calc(50% - 150px);
+        top: calc(50% - 250px);
+        width: 300px;
+        height: 500px;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">HYUN</div>
+    <div class="popupBg">
+      <div class="popup"></div>
+    </div>
+  </body>
+</html>
